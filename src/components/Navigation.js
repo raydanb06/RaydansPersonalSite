@@ -4,7 +4,9 @@ import { Link, useHistory } from 'react-router-dom';
 const Navigation = () => {
 
   return <>
-    <Link to='/home'>Home</Link> | <Link to='/myprojects'>My Projects</Link>
+    <nav>
+      <Link to='/'>About Me</Link> | <Link to='/myprojects'>My Projects</Link>
+    </nav>
   </>
 }
 

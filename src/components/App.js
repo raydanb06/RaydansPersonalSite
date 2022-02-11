@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Route } from 'react-router-dom';
 
 import {
   getSomething
 } from '../api';
+import AboutMe from './AboutMe';
 
 import {
   Navigation
@@ -24,7 +26,10 @@ const App = () => {
   return (
     <div className="App">
       <Navigation />
-      <h1>Welcome to my site!</h1>
+      
+      <Route exact path="/">
+        <AboutMe />
+      </Route>
 
       <h2>{ message }</h2>
     </div>
