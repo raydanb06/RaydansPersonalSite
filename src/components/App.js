@@ -4,6 +4,10 @@ import {
   getSomething
 } from '../api';
 
+import {
+  Navigation
+} from './index';
+
 const App = () => {
   const [message, setMessage] = useState('');
 
@@ -19,7 +23,9 @@ const App = () => {
 
   return (
     <div className="App">
+      <Navigation />
       <h1>Welcome to my site!</h1>
+
       <h2>{ message }</h2>
     </div>
   );
