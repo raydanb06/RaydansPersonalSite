@@ -7,7 +7,8 @@ import {
 import AboutMe from './AboutMe';
 
 import {
-  Navigation
+  Navigation,
+  MyProjects
 } from './index';
 
 const App = () => {
@@ -29,6 +30,10 @@ const App = () => {
       
       <Route exact path="/">
         <AboutMe />
+      </Route>
+
+      <Route exact path="/myprojects">
+        <MyProjects />
       </Route>
 
       <h2>{ message }</h2>
